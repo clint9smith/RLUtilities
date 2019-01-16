@@ -37,8 +37,17 @@ include it in an existing CMake project.
 
 ### Python
 
+If you just want to use RLUtilites for your python bot you can use:
+
 ```
 pip install RLUtilities
+```
+
+For RLUtilies developpers you can install pip package in editable mode instead:
+
+```
+cd main/python
+pip install -e .
 ```
 
 Check out [ExampleBots](https://github.com/samuelpmish/ExampleBots) for demonstrations of how to use these
