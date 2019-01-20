@@ -9,6 +9,9 @@ add_library(cpp_lib
   # simulation
   ${PROJECT_SOURCE_DIR}/src/simulation/car.cpp
   ${PROJECT_SOURCE_DIR}/src/simulation/ball.cpp
+  ${PROJECT_SOURCE_DIR}/src/simulation/pad.cpp
+  ${PROJECT_SOURCE_DIR}/src/simulation/goal.cpp
+  ${PROJECT_SOURCE_DIR}/src/simulation/game_data.cpp
   ${PROJECT_SOURCE_DIR}/src/simulation/geometry.cpp
   ${PROJECT_SOURCE_DIR}/src/simulation/mesh.cpp
   ${PROJECT_SOURCE_DIR}/src/simulation/field.cpp
@@ -33,7 +36,10 @@ add_library(cpp_lib
   # linear algebra
   ${PROJECT_SOURCE_DIR}/src/linear_algebra/math.cpp
 
+  # misc
+  ${PROJECT_SOURCE_DIR}/src/misc/convert.cpp
 )
+
 target_include_directories(cpp_lib PUBLIC inc/)
 target_link_libraries(cpp_lib PUBLIC pybind11)
 target_compile_features(cpp_lib PUBLIC cxx_std_17)
